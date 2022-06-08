@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ice cream</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Libre+Bodoni:ital,wght@1,400;1,700&family=Shalimar&family=Tapestry&family=Water+Brush&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				background: linear-gradient(
+					to right top,
+					#33172a,
+					#3e1d31,
+					#482439,
+					#542b40,
+					#5f3247
+				);
+				font-family: "Libre Bodoni", serif;
+			}
+			h1 {
+				text-align: center;
+				padding: 20px;
+				border: 1px solid white;
+				border-radius: 10px;
+				font-size: 40px;
+			}
+			h2 {
+				text-align: center;
+			}
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 80%;
+				border-radius: 6px;
+			}
+			.container {
+				max-width: 60%;
+				margin: 0 auto;
+				padding: 20px 60px;
+				background: radial-gradient(
+					circle at 10% 20%,
+					rgb(85, 149, 27) 0.1%,
+					rgb(183, 219, 87) 90%
+				);
+				border-radius: 6px;
+			}
+			p {
+				line-height: 1.5;
+				font-size: 20px;
+			}
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			a:hover {
+				text-decoration: underline;
+				color: #512f44;
+			}
+			button {
+				display: block;
+				margin: 20px auto;
+				padding: 20px 30px;
+				font-size: 25px;
+				font-family: "Libre Bodoni", serif;
+				border: 1px solid #512f44;
+				border-radius: 30px;
+				background: #512f44;
+				color: #c1da51;
+				opacity: 0.9;
+				box-shadow: 5px 5px 10px #3e3e3e;
+				transition: all 200ms ease-in-out;
+			}
+			button:hover {
+				color: #512f44;
+				background: #c1da51;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>I love Ice Cream</h1>
+			<h2><em>The History of Ice Cream</em></h2>
+			<hr />
+			<img
+				src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/891/original/1648476591_ice_cream.jpeg?1651084895"
+				alt="Ice cream"
+			/>
+			<hr />
+			<p>
+				<strong>The origins of frozen desserts</strong>
+				are obscure although several accounts exist about their history. Some
+				sources describe ice cream-like foods as originating in Persia as far
+				back as 550 BCE while others claim that the Roman Emperor Nero had ice
+				collected from the Apennine Mountains to produce the first sorbet mixed
+				with honey and wine. Although sorbets are believed to have been invented
+				in Persia, other accounts say ice cream originated in the Mongol Empire
+				and first spread to China during its expansion. Its spread throughout
+				Europe is sometimes attributed to Arab traders, but more often to Marco
+				Polo. Though it's not mentioned in any of his writings, Polo is often
+				credited with introducing sorbet-style desserts to Italy after learning
+				of it during his travels to China. The Italian duchess Catherine de'
+				Medici is said to have introduced flavored sorbet ices to France when
+				she brought some Italian chefs with her to France upon marrying the Duke
+				of Orléans (Henry II of France) in 1533. One hundred years later,
+				Charles I of England was reportedly so impressed by the "frozen snow"
+				that he offered his own ice cream maker a lifetime pension in return for
+				keeping the formula secret, so that ice cream could be a royal
+				prerogative. There is no evidence to support any of these legends.
+			</p>
+			<a href="https://en.wikipedia.org/wiki/Ice_cream" target="_blank"
+				>Read more on Wikipedia</a
+			>
+			<br />
+			<button>Order your favorite Ice Cream 🍦</button>
+		</div>
+		<script>
+			function buyIceCream() {
+				let name = prompt("What is your name?");
+				let mail = prompt("What is your e-mail?");
+				let iceCream = prompt("What ice cream do you want to order?");
+				alert(
+					`Thank you, ${name} for your order! We will contact you as soon as possible!`
+				);
+			}
+			let buybutton = document.querySelector("button");
+			buybutton.addEventListener("click", buyIceCream);
+		</script>
+	</body>
+</html>
